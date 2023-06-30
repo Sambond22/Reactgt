@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.modalwrapper{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom: 0;
+    top: 0;
+    z-index: 50;
+    background-color: rgba(189,189,189,0.9)
+
+
+}
+.modelcontainer{
+    position: fixed;
+    width: 55rem;
+    height: 38rem;
+ 
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem 2rem;
+    border-radius:10%;
+    z-index:51;
+    background: rgb(231, 188, 89);
+
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.details .tab table td:nth-child(2) .range-view {
+    width: 90%;
+}
+.range-view {
+    width: 42rem;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 100rem;
+    overflow: hidden;
+    height: 5px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.range-view:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: var(--percent);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    background-color: #000;
+    animation: fill .3s backwards;
+}
+
+
+
+.range-view.range-view-positive::after
+{
+    background-color: #31ba0b;
+}
+
+.range-view.range-view-negative::after
+{
+    background-color: #FB7171;
+}
