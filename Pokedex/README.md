@@ -1,3 +1,8 @@
+# Pokedex project 
+it use poke api and its give all information about pokemon , data of 1200+ pokemon present in this project just change the no. of first api which 
+present in usegif component.....
+
+
 # React & Tailwind CSS Starter Pack
 
 This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
